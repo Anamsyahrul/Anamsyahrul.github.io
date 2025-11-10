@@ -2,305 +2,711 @@
 <html lang="id">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
-  <title>Syahrul Anam — Portofolio Desain</title>
-  <meta name="description" content="Portofolio desain Syahrul Anam: branding, poster, spanduk, identitas visual, dan konten sosial media dengan gaya elegan dan minimalis."/>
-  <meta name="theme-color" content="#0b1020" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Syahrul Anam — Graphic Designer</title>
+  <meta name="description" content="Portofolio grafis Syahrul Anam. Branding, poster, spanduk, dan identitas visual dengan gaya bold futuristik." />
+  <meta name="theme-color" content="#030712" />
   <link rel="canonical" href="https://anamsyahrul.github.io/" />
-  <!-- OPEN GRAPH / TWITTER CARDS -->
-  <meta property="og:title" content="Syahrul Anam — Portofolio Desain">
-  <meta property="og:description" content="Branding, poster, spanduk, identitas visual, dan konten sosial media.">
-  <!-- GANTI GAMBAR: preview share -->
-  <meta property="og:image" content="https://anamsyahrul.github.io/assets/og-cover.jpg">
-  <meta property="og:url" content="https://anamsyahrul.github.io/">
-  <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Syahrul Anam — Graphic Designer" />
+  <meta property="og:description" content="Branding, poster, dan konten visual untuk brand yang berani tampil beda." />
+  <meta property="og:image" content="https://anamsyahrul.github.io/assets/og-cover.jpg" />
+  <meta property="og:url" content="https://anamsyahrul.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Archivo+Black&display=swap" rel="stylesheet" />
 
   <style>
     :root {
-      --bg: #0b1020;
-      --fg: #e7e9ee;
-      --muted: #94a3b8;
-      --card: #111833;
-      --line: rgba(255,255,255,.12);
-      --brand: #22d3ee;
-      --brand2: #a78bfa;
-      --radius: 16px;
-      --shadow: 0 10px 30px -15px rgba(0,0,0,.5);
+      --bg: #030712;
+      --bg-alt: #050b1f;
+      --fg: #f8fafc;
+      --muted: #8c94ae;
+      --accent: #8b5cf6;
+      --accent-2: #22d3ee;
+      --accent-3: #f472b6;
+      --glass: rgba(7, 12, 28, 0.8);
+      --border: rgba(255, 255, 255, 0.16);
+      --radius: 22px;
+      --shadow: 0 25px 65px rgba(0, 5, 15, 0.55);
     }
-    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; overflow-x: hidden; }
-    body { margin:0; color: var(--fg); background: radial-gradient(900px 600px at 10% -10%, rgba(167,139,250,.12), transparent 60%), radial-gradient(800px 500px at 90% 10%, rgba(34,211,238,.12), transparent 60%), var(--bg); font-family: "Plus Jakarta Sans", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial; line-height:1.6; padding-bottom: 96px; overflow-x:hidden; touch-action: manipulation; }
-    img { max-width:100%; display:block; height:auto; border:0; }
-    a { color: inherit; text-decoration: none; }
-    .container { width:min(1120px, 94%); margin-inline:auto; }
 
-    /* === Helpers === */
-    .btn { display:inline-flex; align-items:center; gap:.6rem; border:1px solid var(--line); padding:.85rem 1.1rem; border-radius:14px; background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02)); transition: transform .2s ease, box-shadow .2s ease; min-height:44px; }
-    .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -12px rgba(34,211,238,.45); }
-    .btn.primary { border-color: transparent; color: #0b1020; font-weight: 800; background: linear-gradient(135deg, var(--brand), var(--brand2)); }
-    .pill { display:inline-flex; align-items:center; gap:.5rem; padding:.55rem .8rem; border-radius: 12px; border:1px solid var(--line); min-height:40px; }
-    .chip { display:inline-flex; align-items:center; gap:.45rem; padding:.45rem .7rem; border-radius:999px; border:1px dashed rgba(255,255,255,.28); }
-    .card { background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02)); border:1px solid var(--line); border-radius: var(--radius); box-shadow: inset 0 1px 0 rgba(255,255,255,.06); }
-
-    h1, h2, h3 { line-height:1.15; margin:0 0 .6rem; }
-    h1.title { font-size: clamp(1.9rem, 5.6vw, 3.2rem); font-weight:800; letter-spacing:.2px; }
-    h2.section-title { font-size: clamp(1.4rem, 4.4vw, 2rem); font-weight:800; margin:0 0 1rem; }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; height: 100%; }
+    body {
+      margin: 0;
+      min-height: 100%;
+      font-family: "Space Grotesk", "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--fg);
+      background:
+        radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.3), transparent 40%),
+        radial-gradient(circle at 80% 0%, rgba(34, 211, 238, 0.24), transparent 45%),
+        var(--bg);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 4px 4px;
+      opacity: 0.08;
+      pointer-events: none;
+      mix-blend-mode: screen;
+    }
+    ::selection { background: rgba(34, 211, 238, 0.4); color: #fff; }
+    img { max-width: 100%; display: block; border: none; }
+    a { color: inherit; text-decoration: none; transition: color 0.25s ease, opacity 0.25s ease; }
+    .container { width: min(1200px, 92vw); margin-inline: auto; position: relative; z-index: 2; }
+    section { padding: clamp(3.5rem, 7vw, 6.5rem) 0; }
+    h1, h2, h3 { margin: 0 0 0.7rem; line-height: 1.15; }
+    h1 { font-size: clamp(2.4rem, 6vw, 4.4rem); font-weight: 700; letter-spacing: 0.5px; }
+    h2 { font-size: clamp(1.6rem, 4vw, 2.5rem); font-weight: 600; }
+    h3 { font-size: 1.2rem; font-weight: 600; }
+    p { margin: 0 0 1rem; }
     .muted { color: var(--muted); }
 
-    /* === Header === */
-    header.site { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(10px); background: rgba(11,16,32,.85); border-bottom: 1px solid var(--line); }
-    .nav { display:flex; align-items:center; justify-content:space-between; padding:.8rem 0; }
-    .brand { display:flex; align-items:center; gap:.7rem; }
-    .logo { width:40px; height:40px; border-radius:10px; overflow:hidden; border:1px solid var(--line); background:#0e1430; }
-    nav.menu { display:flex; gap:.6rem; }
-    .hamb { display:none; border:1px solid var(--line); background:transparent; border-radius:12px; padding:.5rem .7rem; color:var(--fg); }
-
-    /* === Hero === */
-    .hero { padding: 4.2rem 0 2.2rem; }
-    .hero-grid { display:grid; grid-template-columns: 1.05fr .95fr; gap:1.6rem; align-items:center; }
-
-    /* === Gallery === */
-    .gallery { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; }
-    .work { position:relative; border-radius:16px; overflow:hidden; border:1px solid var(--line); box-shadow: var(--shadow); }
-    .work img { aspect-ratio: 16/10; object-fit: cover; filter: saturate(1.03) contrast(1.02); }
-    .work .label { position:absolute; left:.6rem; bottom:.6rem; background:rgba(0,0,0,.45); backdrop-filter: blur(4px); padding:.35rem .55rem; border-radius:10px; font-size:.8rem }
-
-    /* === About/Services === */
-    .about { display:grid; grid-template-columns: 1fr 1fr; gap:1.2rem; }
-    .list { display:grid; gap:.55rem; padding:0; margin:0; }
-    .list li { list-style:none; display:flex; gap:.6rem; align-items:flex-start; }
-
-    /* === CTA Floating === */
-    .floating { position:fixed; right:1rem; bottom:1rem; display:flex; flex-direction:column; gap:.6rem; z-index:40; }
-
-    /* === Footer === */
-    .footer { padding:1.6rem 0; border-top:1px solid var(--line); color:var(--muted); font-size:.95rem }
-
-    /* === Responsive === */
-    @media (max-width: 980px){
-      .hero-grid { grid-template-columns: 1fr; }
-      .about { grid-template-columns: 1fr; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.35rem 1.2rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #cbd5f5;
+      background: rgba(255, 255, 255, 0.04);
     }
-    @media (max-width: 640px){
-      .hamb { display:inline-flex }
-      nav.menu { display:none }
-      nav.menu.open { display:flex; flex-direction:column; position:absolute; inset:60px 4% auto; gap:.6rem; background: rgba(17,24,51,.97); border:1px solid var(--line); border-radius:14px; padding:.8rem; max-width:92%; }
-      .btn { width:100%; justify-content:center; font-size:16px; }
-      .hero { padding: 3rem 0 1.2rem; }
-      section { padding: 2rem 0; }
+    .btn {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.85rem 1.6rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      min-height: 46px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: rgba(255, 255, 255, 0.03);
     }
-      nav.menu { display:none }
-      nav.menu.open { display:flex; flex-direction:column; position:absolute; inset:60px 4% auto; gap:.6rem; background: rgba(17,24,51,.97); border:1px solid var(--line); border-radius:14px; padding:.8rem; }
-      .btn { width:100%; justify-content:center; }
-      .hero { padding: 3rem 0 1.2rem; }
-      section { padding: 2rem 0; }
+    .btn:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+    .btn.primary {
+      border-color: transparent;
+      background: linear-gradient(120deg, var(--accent), var(--accent-2));
+      color: #030712;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .btn.ghost { background: transparent; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: #d4ddff;
+      font-size: 0.9rem;
+      background: rgba(255, 255, 255, 0.03);
+    }
+    .card {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    }
+    .glass {
+      background: linear-gradient(140deg, rgba(9, 14, 33, 0.9), rgba(9, 11, 23, 0.6));
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
     }
 
-    /* === Print (Ctrl+P → PDF rapi) === */
-    @media print {
-      * { box-shadow:none !important; filter:none !important; }
-      body { background:#fff; color:#111; }
-      header.site, .floating { display:none !important; }
-      a[href^="http"]::after { content:" (" attr(href) ")"; font-size: 90%; }
-      .card { border: 1px solid #ddd; }
+    /* Header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 99;
+      background: rgba(3, 7, 18, 0.78);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.1rem 0;
+    }
+    .brand { display: flex; align-items: center; gap: 1rem; font-weight: 600; }
+    .brand-mark {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.25), rgba(34, 211, 238, 0.15));
+      display: grid;
+      place-items: center;
+      font-family: "Archivo Black", "Space Grotesk", sans-serif;
+      letter-spacing: 0.2em;
+      font-size: 0.95rem;
+    }
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+    }
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .site-nav a {
+      padding: 0.55rem 1.1rem;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      border: 1px solid transparent;
+    }
+    .site-nav a:hover { border-color: var(--border); }
+    .site-nav .ghost:hover { border-color: var(--accent-2); color: var(--accent-2); }
+    .menu-toggle {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.5rem 1rem;
+      background: transparent;
+      color: var(--fg);
+      font-size: 0.95rem;
+      display: none;
+      align-items: center;
+      gap: 0.4rem;
     }
 
-    /* === Motion preference === */
+    /* Hero */
+    .hero { padding-top: clamp(4rem, 11vw, 8rem); }
+    .hero-wrap {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: clamp(1.8rem, 6vw, 3.6rem);
+      align-items: center;
+    }
+    .hero h1 { text-transform: uppercase; }
+    .hero h1 span { color: var(--accent-2); }
+    .hero-copy p { max-width: 540px; }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin: 1.5rem 0;
+    }
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.9rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .hero-stats li {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1rem 1.2rem;
+      background: rgba(0, 0, 0, 0.2);
+    }
+    .hero-stats strong {
+      display: block;
+      font-size: 1.7rem;
+      letter-spacing: 0.02em;
+    }
+    .hero-visual { position: relative; }
+    .hero-visual::after {
+      content: "";
+      position: absolute;
+      inset: -20px;
+      border-radius: calc(var(--radius) + 12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      opacity: 0.5;
+      filter: blur(30px);
+    }
+    .hero-frame {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: radial-gradient(circle at 30% 20%, rgba(34, 211, 238, 0.18), rgba(9, 11, 23, 0.9));
+      padding: 1.4rem;
+      position: relative;
+    }
+    .hero-frame img {
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .floating-labels {
+      position: absolute;
+      bottom: 1.4rem;
+      left: 1.4rem;
+      right: 1.4rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+    .floating-labels span {
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(3, 7, 18, 0.75);
+      border: 1px solid var(--border);
+      font-size: 0.85rem;
+    }
+
+    /* Sections */
+    .section-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.8rem;
+    }
+
+    /* Works */
+    .works-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.2rem;
+    }
+    .work-card {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #0c132e;
+      transition: transform 0.4s ease;
+    }
+    .work-card:hover { transform: translateY(-6px) scale(1.01); }
+    .work-card img {
+      aspect-ratio: 5 / 3;
+      object-fit: cover;
+      filter: contrast(1.05) saturate(1.03);
+    }
+    .work-meta {
+      position: absolute;
+      left: 1rem;
+      bottom: 1rem;
+      padding: 0.5rem 0.9rem;
+      border-radius: 14px;
+      background: rgba(3, 7, 18, 0.78);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 0.85rem;
+    }
+
+    /* Services */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    .service-card {
+      padding: 1.4rem;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: linear-gradient(140deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
+      min-height: 190px;
+    }
+    .service-card strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+    .process-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.8rem 0 0;
+      display: grid;
+      gap: 0.9rem;
+    }
+    .process-list li {
+      border-left: 3px solid var(--accent-2);
+      padding-left: 1rem;
+      font-size: 0.95rem;
+    }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.4rem;
+    }
+    .profile {
+      display: grid;
+      gap: 1rem;
+    }
+    .profile img {
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .cred-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0.7rem;
+    }
+    .cred-list li {
+      padding: 0.6rem 0.8rem;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px dashed rgba(255, 255, 255, 0.15);
+      font-size: 0.95rem;
+    }
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.8rem;
+    }
+    .stack .chip { font-size: 0.85rem; }
+
+    /* Contact */
+    .contact-card {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.4rem;
+      align-items: center;
+      padding: clamp(1.8rem, 4vw, 2.8rem);
+    }
+    .contact-card h2 { margin-bottom: 0.6rem; }
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 1rem;
+    }
+
+    /* Footer & Floating CTA */
+    .footer {
+      padding: 2.5rem 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(3, 7, 18, 0.6);
+    }
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+    .floating-cta {
+      position: fixed;
+      right: 1.5rem;
+      bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      z-index: 98;
+    }
+    .floating-cta .btn { box-shadow: 0 15px 40px rgba(3, 7, 18, 0.5); }
+
+    @media (max-width: 960px) {
+      .site-nav {
+        position: absolute;
+        top: calc(100% + 8px);
+        right: 0;
+        left: 0;
+        padding: 1rem;
+        flex-direction: column;
+        background: rgba(5, 11, 31, 0.95);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+      }
+      .site-nav.open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+      .menu-toggle { display: inline-flex; }
+      .floating-cta {
+        left: 1rem;
+        right: 1rem;
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-stats { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+      .site-nav a { width: 100%; text-align: center; }
+      .section-top { flex-direction: column; align-items: flex-start; }
+      .badge { width: 100%; justify-content: center; }
+    }
+
     @media (prefers-reduced-motion: reduce) {
-      * { scroll-behavior: auto; }
-      .btn:hover, .work:hover { transform:none; box-shadow:none; }
+      * { transition: none !important; animation-duration: 0s !important; }
     }
   </style>
 </head>
 <body>
-  <!-- ================= HEADER ================= -->
-  <header class="site" role="banner">
-    <div class="container nav">
-      <div class="brand">
-        <div class="logo">
-          <!-- GANTI GAMBAR: logo brand -->
-          <img src="assets/logo-anda.png" alt="Logo Syahrul Anam" loading="lazy" />
-        </div>
-        <strong>Syahrul Anam</strong>
-        <span class="chip" aria-label="profesi">🎨 Desainer Visual</span>
-      </div>
-      <button class="hamb" aria-label="Buka menu" onclick="document.querySelector('nav.menu').classList.toggle('open')">☰</button>
-      <nav class="menu" aria-label="Navigasi utama">
-        <a class="pill" href="#karya" role="button">Karya</a>
-        <a class="pill" href="#tentang" role="button">Tentang</a>
-        <a class="pill" href="#kontak" role="button">Kontak</a>
-        <a class="pill" href="https://anamsyahrul.github.io/assets/portfolio-full.pdf" download="Portofolio-Syahrul-Anam.pdf" rel="noopener" role="button">⬇️ PDF</a>
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="#home">
+        <span class="brand-mark">SA</span>
+        <span>
+          Syahrul Anam
+          <small>Graphic Designer</small>
+        </span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Navigasi utama">
+        <a href="#home">Beranda</a>
+        <a href="#karya">Karya</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+        <a class="btn ghost" href="https://anamsyahrul.github.io/assets/portfolio-full.pdf" download="Portofolio-Syahrul-Anam.pdf" rel="noopener">Unduh PDF</a>
       </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+        <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M1 1h18M1 6h18M1 11h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+        </svg>
+      </button>
     </div>
   </header>
 
-  <!-- ================= HERO ================= -->
-  <section class="hero" id="beranda">
-    <div class="container hero-grid">
-      <div>
-        <span class="chip">Tersedia untuk freelance</span>
-        <h1 class="title">Portofolio Desain — Branding, Poster, & Identitas Visual</h1>
-        <p class="muted">Gaya elegan, minimalis, dan mudah dipahami. Berpengalaman untuk organisasi kampus, pondok pesantren, dan UMKM lokal.</p>
-        <div style="display:flex; gap:.8rem; flex-wrap:wrap; margin-top:.8rem">
-          <a class="btn primary" href="#karya">Lihat Karya</a>
-          <!-- Link absolut → aman di GitHub Pages -->
-          <a class="btn" href="https://anamsyahrul.github.io/assets/portfolio-full.pdf" download="Portofolio-Syahrul-Anam.pdf" rel="noopener">Unduh PDF</a>
-        </div>
-        <div class="stack" style="margin-top:1rem">
-          <span class="chip">Pixellab</span>
-          <span class="chip">CorelDraw</span>
-          <span class="chip">Figma</span>
-          <span class="chip">Canva</span>
-          <span class="chip">Typography</span>
-        </div>
-      </div>
-      <aside class="card" style="padding:1rem; border-radius:20px">
-        <!-- GANTI GAMBAR: foto profil -->
-        <img src="assets/foto-profil.jpg" alt="Foto Syahrul Anam" loading="lazy" sizes="(max-width:640px) 100vw, 520px" style="border-radius:14px" />
-        <div class="grid" style="grid-template-columns:1fr 1fr; gap:.8rem; margin-top:1rem">
-          <div class="card" style="padding:1rem; text-align:center">
-            <strong style="font-size:1.25rem">50+</strong>
-            <div class="muted">Proyek</div>
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-wrap">
+        <div class="hero-copy">
+          <span class="badge">Graphic Designer • Open for collaboration</span>
+          <h1>Visual identitas <span>berani</span> untuk brand yang butuh spotlight.</h1>
+          <p class="muted">Saya membantu brand, event komunitas, hingga UMKM menghadirkan desain yang tajam, terstruktur, dan tetap relevan di sosial media maupun media cetak.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="https://wa.me/6287794801169" target="_blank" rel="noopener">Mulai Proyek</a>
+            <a class="btn" href="#karya">Lihat Showcase</a>
+            <a class="btn ghost" href="https://anamsyahrul.github.io/assets/portfolio-full.pdf" download="Portofolio-Syahrul-Anam.pdf" rel="noopener">Unduh PDF</a>
           </div>
-          <div class="card" style="padding:1rem; text-align:center">
-            <strong style="font-size:1.25rem">20+</strong>
-            <div class="muted">Brand/Acara</div>
-          </div>
+          <ul class="hero-stats">
+            <li>
+              <strong>50+</strong>
+              <span class="muted">Proyek tuntas</span>
+            </li>
+            <li>
+              <strong>20+</strong>
+              <span class="muted">Brand & acara</span>
+            </li>
+            <li>
+              <strong>5</strong>
+              <span class="muted">Tahun eksplorasi visual</span>
+            </li>
+          </ul>
         </div>
-      </aside>
-    </div>
-  </section>
-
-  <!-- ================= KARYA ================= -->
-  <section id="karya">
-    <div class="container">
-      <h2 class="section-title">Karya Pilihan</h2>
-      <p class="muted" style="margin-top:-.4rem; margin-bottom:1rem">Klik kartu untuk membuka ukuran penuh.</p>
-      <div class="gallery">
-        <a class="work" href="assets/works/01-branding-himaba.jpg" target="_blank" title="Branding HIMABA">
-          <!-- GANTI GAMBAR: 01-branding-himaba.jpg -->
-          <img src="assets/works/01-branding-himaba.jpg" alt="Branding HIMABA" loading="lazy" sizes="(max-width:640px) 100vw, 50vw"/>
-          <span class="label">Branding • HIMABA</span>
-        </a>
-        <a class="work" href="assets/works/02-logo-harlah-61.jpg" target="_blank" title="Logo Harlah 61">
-          <img src="assets/works/02-logo-harlah-61.jpg" alt="Logo Harlah 61" loading="lazy" sizes="(max-width:640px) 100vw, 50vw"/>
-          <span class="label">Logo • Harlah 61</span>
-        </a>
-        <a class="work" href="assets/works/03-spanduk-bazaar.jpg" target="_blank" title="Spanduk Bazaar">
-          <img src="assets/works/03-spanduk-bazaar.jpg" alt="Spanduk Bazaar" loading="lazy" sizes="(max-width:640px) 100vw, 50vw"/>
-          <span class="label">Spanduk • Bazaar</span>
-        </a>
-        <a class="work" href="assets/works/04-poster-acara.jpg" target="_blank" title="Poster Acara">
-          <img src="assets/works/04-poster-acara.jpg" alt="Poster Acara" loading="lazy" sizes="(max-width:640px) 100vw, 50vw"/>
-          <span class="label">Poster • Event</span>
-        </a>
-        <a class="work" href="assets/works/05-feed-ig-1.jpg" target="_blank" title="Feed IG 1">
-          <img src="assets/works/05-feed-ig-1.jpg" alt="Feed Instagram" loading="lazy" sizes="(max-width:640px) 100vw, 33vw"/>
-          <span class="label">Feed • Instagram</span>
-        </a>
-        <a class="work" href="assets/works/06-banner-bustan.jpg" target="_blank" title="Banner Pondok">
-          <img src="assets/works/06-banner-bustan.jpg" alt="Banner Pondok" loading="lazy" sizes="(max-width:640px) 100vw, 66vw"/>
-          <span class="label">Banner • Pondok</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= TENTANG ================= -->
-  <section id="tentang">
-    <div class="container about">
-      <article class="card" style="padding:1.1rem">
-        <div style="display:grid; grid-template-columns: 110px 1fr; gap:1rem; align-items:center">
-          <div style="border-radius:12px; overflow:hidden; border:1px solid var(--line)">
-            <!-- GANTI GAMBAR: foto square -->
-            <img src="assets/foto-square.jpg" alt="Syahrul Anam" loading="lazy" sizes="96px"/>
-          </div>
-          <div>
-            <h3 style="margin:.2rem 0 .4rem">Syahrul Anam</h3>
-            <p class="muted" style="margin:0">Desainer visual dengan fokus pada identitas, tipografi yang bersih, dan layout yang rapi. Siap membantu brand kecil hingga acara komunitas.</p>
-            <div class="stack" style="margin-top:.8rem">
-              <span class="chip">Logo & Identitas</span>
-              <span class="chip">Poster & Spanduk</span>
-              <span class="chip">Konten Sosial</span>
+        <div class="hero-visual">
+          <div class="hero-frame">
+            <img src="assets/foto-profil.jpg" alt="Syahrul Anam" loading="lazy" sizes="(max-width:640px) 90vw, 520px" />
+            <div class="floating-labels">
+              <span>Branding futuristik</span>
+              <span>Poster modular</span>
             </div>
           </div>
         </div>
-        <ul class="list" style="margin:1rem 0 0">
-          <li>📍 Berbasis di Brebes, Indonesia</li>
-          <li>🤝 Terbuka kolaborasi (kampus/pondok/UMKM)</li>
-          <li>🕒 Tanggap & tepat waktu</li>
-        </ul>
-      </article>
-      <aside class="card" style="padding:1.1rem">
-        <h3 style="margin:0 0 .6rem">Layanan</h3>
-        <div class="grid" style="grid-template-columns:1fr 1fr; gap:.8rem">
-          <div class="card" style="padding:1rem"><strong>Logo & Identitas</strong><p class="muted">Logo, palet warna, tipografi, basic brand guide.</p></div>
-          <div class="card" style="padding:1rem"><strong>Poster & Spanduk</strong><p class="muted">Desain acara, promosi bazaar, seminar, festival.</p></div>
-          <div class="card" style="padding:1rem"><strong>Konten Sosial</strong><p class="muted">Feed/Story IG, banner YouTube, kampanye.</p></div>
-          <div class="card" style="padding:1rem"><strong>Template</strong><p class="muted">PPT/Poster mudah dipakai ulang.</p></div>
+      </div>
+    </section>
+
+    <section id="karya">
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <p class="badge" style="padding:0.3rem 1rem; letter-spacing:0.12em;">Showcase</p>
+            <h2>Karya pilihan dengan vibe bold & editorial</h2>
+            <p class="muted">Klik kartu untuk membuka versi resolusi tinggi.</p>
+          </div>
+          <a class="btn" href="https://instagram.com/anam.elsyahrul" target="_blank" rel="noopener">Update terkini ↗</a>
         </div>
-        <div style="margin-top:1rem">
-          <span class="muted">Tools:</span>
-          <div class="stack" style="margin-top:.6rem">
-            <span class="chip">Pixellab</span>
-            <span class="chip">CorelDraw</span>
-            <span class="chip">Canva</span>
-            <span class="chip">Figma</span>
+        <div class="works-grid">
+          <a class="work-card" href="assets/works/01-branding-himaba.jpg" target="_blank" title="Branding HIMABA">
+            <img src="assets/works/01-branding-himaba.jpg" alt="Branding HIMABA" loading="lazy" />
+            <span class="work-meta">Branding • HIMABA</span>
+          </a>
+          <a class="work-card" href="assets/works/02-logo-harlah-61.jpg" target="_blank" title="Logo Harlah 61">
+            <img src="assets/works/02-logo-harlah-61.jpg" alt="Logo Harlah 61" loading="lazy" />
+            <span class="work-meta">Logo • Harlah 61</span>
+          </a>
+          <a class="work-card" href="assets/works/03-spanduk-bazaar.jpg" target="_blank" title="Spanduk Bazaar">
+            <img src="assets/works/03-spanduk-bazaar.jpg" alt="Spanduk Bazaar" loading="lazy" />
+            <span class="work-meta">Spanduk • Marketplace</span>
+          </a>
+          <a class="work-card" href="assets/works/04-poster-acara.jpg" target="_blank" title="Poster Acara">
+            <img src="assets/works/04-poster-acara.jpg" alt="Poster Acara" loading="lazy" />
+            <span class="work-meta">Poster • Event</span>
+          </a>
+          <a class="work-card" href="assets/works/05-feed-ig-1.jpg" target="_blank" title="Feed Instagram">
+            <img src="assets/works/05-feed-ig-1.jpg" alt="Feed Instagram" loading="lazy" />
+            <span class="work-meta">Feed • Instagram</span>
+          </a>
+          <a class="work-card" href="assets/works/06-banner-bustan.jpg" target="_blank" title="Banner Pondok">
+            <img src="assets/works/06-banner-bustan.jpg" alt="Banner Pondok" loading="lazy" />
+            <span class="work-meta">Banner • Pondok</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="layanan">
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <p class="badge" style="padding:0.3rem 1rem; letter-spacing:0.12em;">Layanan</p>
+            <h2>Paket visual yang siap tempur</h2>
+          </div>
+          <p class="muted" style="max-width:420px;">Saya menyiapkan SOP yang jelas: riset singkat, moodboard, eksplorasi tipografi, hingga file final siap cetak & sosial media.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <strong>Logo & Identitas</strong>
+            <p class="muted">Logo utama/turunan, palet warna, dan pedoman dasar pemakaian agar brand terasa solid.</p>
+          </div>
+          <div class="service-card">
+            <strong>Poster & Spanduk</strong>
+            <p class="muted">Layout modular untuk kampus, pesantren, atau event komunitas dengan deadline ketat.</p>
+          </div>
+          <div class="service-card">
+            <strong>Konten Sosial</strong>
+            <p class="muted">Template IG carousel, story, banner channel, hingga konten kampanye digital.</p>
+          </div>
+          <div class="service-card">
+            <strong>Kit Presentasi</strong>
+            <p class="muted">Deck pitching, materi sponsorship, dan template promosi yang mudah dipakai ulang.</p>
           </div>
         </div>
-      </aside>
-    </div>
-  </section>
+        <ol class="process-list">
+          <li><strong>Brief & Referensi</strong> — pahami target audiens, ukuran media, dan deadline.</li>
+          <li><strong>Eksplorasi Visual</strong> — moodboard, sketsa layout, opsi warna & tipografi.</li>
+          <li><strong>Produksi Final</strong> — eksekusi desain, adaptasi multi platform, file siap cetak.</li>
+        </ol>
+      </div>
+    </section>
 
-  <!-- ================= CTA KONTAK ================= -->
-  <section id="kontak">
-    <div class="container card" style="padding:1.2rem; border-radius:22px; display:grid; grid-template-columns: 1.2fr 1fr; gap:1rem; align-items:center">
-      <div>
-        <h2 class="section-title">Ada proyek? Yuk ngobrol!</h2>
-        <p class="muted">Kirim brief singkat: tujuan, ukuran, tenggat, dan referensi visual.</p>
-        <div style="display:flex; gap:.8rem; flex-wrap:wrap; margin-top:.4rem">
-          <a class="btn primary" href="https://wa.me/6287794801169" target="_blank" rel="noopener" aria-label="WhatsApp">Chat WhatsApp</a>
-          <a class="btn" href="mailto:mas07anam@gmail.com" aria-label="Email">Email</a>
-          <a class="btn" href="https://instagram.com/anam.elsyahrul" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+    <section id="tentang">
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <p class="badge" style="padding:0.3rem 1rem; letter-spacing:0.12em;">Tentang</p>
+            <h2>Desainer yang nyaman di tipografi bold & grid rapih</h2>
+          </div>
+        </div>
+        <div class="about-grid">
+          <div class="card profile">
+            <img src="assets/foto-square.jpg" alt="Syahrul Anam" loading="lazy" sizes="(max-width:640px) 90vw, 300px" />
+            <p class="muted">Berbasis di Brebes, saya menggabungkan elemen editorial, energi neon, dan struktur grid agar pesan klien terasa modern tapi tetap grounded.</p>
+            <ul class="cred-list">
+              <li>📍 Brebes, Indonesia</li>
+              <li>🤝 Kolaborasi untuk kampus, pondok, UMKM</li>
+              <li>⚡ Tanggap dan jelas soal timeline</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Keahlian utama</h3>
+            <div class="stack">
+              <span class="chip">Typography Play</span>
+              <span class="chip">Layout Editorial</span>
+              <span class="chip">Brand System</span>
+              <span class="chip">Motion-ready asset</span>
+            </div>
+            <h3 style="margin-top:1.4rem;">Tools favorit</h3>
+            <div class="stack">
+              <span class="chip">Pixellab</span>
+              <span class="chip">CorelDraw</span>
+              <span class="chip">Canva</span>
+              <span class="chip">Figma</span>
+            </div>
+            <h3 style="margin-top:1.4rem;">Pengalaman singkat</h3>
+            <p class="muted">Branding organisasi kampus, spanduk untuk event pesantren, materi promo UMKM, hingga kit sosial media kampanye lokal.</p>
+          </div>
         </div>
       </div>
-      <div class="card" style="padding:1rem; border-radius:18px">
-        <!-- GANTI GAMBAR: ilustrasi/preview karya -->
-        <img src="assets/preview-karya.jpg" alt="Preview Karya" loading="lazy" sizes="(max-width:640px) 100vw, 420px" style="border-radius:12px"/>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="footer" role="contentinfo">
-    <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap">
-      <div>© <span id="y"></span> Syahrul Anam. Dibuat dengan cinta & grid.</div>
-      <div style="display:flex; gap:.6rem; flex-wrap:wrap">
-        <a class="pill" href="https://instagram.com/anam.elsyahrul" target="_blank" rel="noopener">IG</a>
-        <a class="pill" href="https://wa.me/6287794801169" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="pill" href="mailto:mas07anam@gmail.com">Email</a>
-        <a class="pill" href="https://anamsyahrul.github.io/assets/portfolio-full.pdf" download="Portofolio-Syahrul-Anam.pdf" rel="noopener">Unduh PDF</a>
+    <section id="kontak">
+      <div class="container">
+        <div class="contact-card card">
+          <div>
+            <p class="badge" style="padding:0.3rem 1rem; letter-spacing:0.12em;">Kontak</p>
+            <h2>Ada proyek? Kirim brief singkat & mood referensi.</h2>
+            <p class="muted">Sampaikan target audiens, ukuran media, deadline, dan tone warna favoritmu. Balasan cepat dalam 24 jam.</p>
+            <div class="contact-actions">
+              <a class="btn primary" href="https://wa.me/6287794801169" target="_blank" rel="noopener">Chat WhatsApp</a>
+              <a class="btn" href="mailto:mas07anam@gmail.com">Email</a>
+              <a class="btn ghost" href="https://instagram.com/anam.elsyahrul" target="_blank" rel="noopener">Instagram</a>
+            </div>
+          </div>
+          <div class="card glass">
+            <img src="assets/preview-karya.jpg" alt="Preview karya" loading="lazy" sizes="(max-width:640px) 90vw, 420px" style="border-radius:18px;" />
+            <p class="muted" style="margin-top:1rem;">File final siap: PNG/JPG Hi-Res • PDF siap cetak • Bonus template sosial media jika dibutuhkan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>© <span id="year"></span> Syahrul Anam. Dibuat dengan kopi hitam dan grid presisi.</div>
+      <div class="footer-links">
+        <a class="chip" href="https://instagram.com/anam.elsyahrul" target="_blank" rel="noopener">Instagram</a>
+        <a class="chip" href="https://wa.me/6287794801169" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="chip" href="mailto:mas07anam@gmail.com">Email</a>
+        <a class="chip" href="https://anamsyahrul.github.io/assets/portfolio-full.pdf" download="Portofolio-Syahrul-Anam.pdf" rel="noopener">Portofolio PDF</a>
       </div>
     </div>
   </footer>
 
-  <!-- ================= Floating CTA ================= -->
-  <div class="floating">
-    <a class="btn primary" href="https://wa.me/6287794801169" target="_blank" rel="noopener" aria-label="Chat WhatsApp">Konsultasi Gratis</a>
-    <a class="btn" href="https://anamsyahrul.github.io/assets/portfolio-full.pdf" download="Portofolio-Syahrul-Anam.pdf" rel="noopener" aria-label="Unduh Portofolio PDF">⬇️ Unduh PDF</a>
-    <button class="btn" onclick="window.scrollTo({top:0, behavior:'smooth'})" aria-label="Kembali ke atas">⬆️ Ke atas</button>
+  <div class="floating-cta">
+    <a class="btn primary" href="https://wa.me/6287794801169" target="_blank" rel="noopener">Konsultasi Gratis</a>
+    <a class="btn" href="#home">⬆︎ Ke atas</a>
   </div>
 
-  <!-- ================= Schema.org ================= -->
+  <script>
+    const nav = document.getElementById('site-nav');
+    const toggle = document.querySelector('.menu-toggle');
+    if (nav && toggle) {
+      toggle.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open);
+      });
+      nav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 960 && nav.classList.contains('open')) {
+            nav.classList.remove('open');
+            toggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+    }
+    const yearEl = document.getElementById('year');
+    if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
+  </script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Syahrul Anam",
-    "jobTitle": "Desainer Visual",
+    "jobTitle": "Graphic Designer",
     "url": "https://anamsyahrul.github.io/",
     "email": "mailto:mas07anam@gmail.com",
     "sameAs": [
@@ -308,22 +714,6 @@
       "https://wa.me/6287794801169"
     ]
   }
-  </script>
-
-  <script>
-    // Tahun dinamis
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-  <script>
-    // Cegah pinch-zoom & double-tap zoom (mobile Safari/Chrome)
-    // Catatan: Beberapa browser bisa abaikan ini demi aksesibilitas sistem.
-    document.addEventListener('gesturestart', function(e){ e.preventDefault(); }, {passive:false});
-    let lastTouchEnd = 0;
-    document.addEventListener('touchend', function(e){
-      const now = Date.now();
-      if (now - lastTouchEnd <= 300) { e.preventDefault(); }
-      lastTouchEnd = now;
-    }, {passive:false});
   </script>
 </body>
 </html>
