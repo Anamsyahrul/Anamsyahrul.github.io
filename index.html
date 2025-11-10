@@ -17,71 +17,98 @@
       --text:#e5e7eb;        /* gray-200 */
       --brand:#22d3ee;       /* cyan */
       --brand-2:#a78bfa;     /* violet */
-      --ring: 0 0 0 .15rem rgba(34,211,238,.35);
       --radius: 18px;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;background:radial-gradient(1200px 800px at 10% -10%, rgba(167,139,250,.12), transparent 60%),radial-gradient(1000px 600px at 90% 10%, rgba(34,211,238,.12), transparent 60%), var(--bg);color:var(--text);font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";}
-    img{max-width:100%;display:block}
+    html{-webkit-text-size-adjust:100%}
+    body{margin:0;background:radial-gradient(1200px 800px at 10% -10%, rgba(167,139,250,.12), transparent 60%),radial-gradient(1000px 600px at 90% 10%, rgba(34,211,238,.12), transparent 60%), var(--bg);color:var(--text);font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";line-height:1.6;padding-bottom:96px}
+    img{max-width:100%;display:block;border:0}
+    img[loading="lazy"]{content-visibility:auto}
     a{color:inherit;text-decoration:none}
     .container{width:min(1120px,92%);margin-inline:auto}
-    .btn{display:inline-flex;gap:.6rem;align-items:center;border:1px solid rgba(255,255,255,.12);padding:.9rem 1.2rem;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));backdrop-filter:blur(4px);transition:.25s ease;cursor:pointer}
+    .btn, .pill{min-height:44px}
+    .btn{display:inline-flex;gap:.6rem;align-items:center;border:1px solid rgba(255,255,255,.12);padding:.85rem 1.1rem;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));backdrop-filter:blur(4px);transition:transform .2s ease, box-shadow .2s ease;cursor:pointer}
     .btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px -12px rgba(34,211,238,.5)}
     .btn.primary{border-color:transparent;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#0b1020;font-weight:700}
-    .grid{display:grid;gap:1.2rem}
-    .hero{padding:5.5rem 0 3rem;position:relative;overflow:hidden}
-    .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:2.2rem;align-items:center}
-    .badge{display:inline-flex;gap:.5rem;align-items:center;padding:.45rem .8rem;border-radius:999px;background:rgba(167,139,250,.16);border:1px solid rgba(167,139,250,.35);color:#e9d5ff;font-size:.85rem}
-    .title{font-size:clamp(1.9rem,5vw,3.2rem);line-height:1.1;margin:.7rem 0 .6rem;font-weight:800;letter-spacing:.3px}
+    .grid{display:grid;gap:1.1rem}
+    .hero{padding:4.2rem 0 2.2rem;position:relative}
+    .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:1.6rem;align-items:center}
+    .badge{display:inline-flex;gap:.5rem;align-items:center;padding:.4rem .7rem;border-radius:999px;background:rgba(167,139,250,.16);border:1px solid rgba(167,139,250,.35);color:#e9d5ff;font-size:.85rem}
+    .title{font-size:clamp(1.8rem,6vw,3rem);line-height:1.15;margin:.6rem 0 .5rem;font-weight:800;letter-spacing:.2px}
     .muted{color:var(--muted)}
-    .hero-pic{position:relative}
     .card{background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);box-shadow:inset 0 1px 0 rgba(255,255,255,.06)}
-    .pill{display:inline-flex;gap:.5rem;align-items:center;border:1px solid rgba(255,255,255,.08);padding:.55rem .75rem;border-radius:12px}
-    .stack{display:flex;flex-wrap:wrap;gap:.6rem}
-    section{padding:3.5rem 0}
-    h2.section-title{font-size:clamp(1.4rem,3.5vw,2rem);margin:0 0 1.2rem;font-weight:800}
-    .gallery{grid-template-columns:repeat(12,1fr)}
+    .pill{display:inline-flex;gap:.5rem;align-items:center;border:1px solid rgba(255,255,255,.12);padding:.55rem .8rem;border-radius:12px}
+    .stack{display:flex;flex-wrap:wrap;gap:.55rem}
+    section{padding:3rem 0}
+    h2.section-title{font-size:clamp(1.4rem,4.2vw,2rem);margin:0 0 1rem;font-weight:800}
+
+    /* NAV */
+    header.site{position:sticky;top:0;z-index:50;background:rgba(11,16,32,.8);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+    .brand{display:flex;align-items:center;gap:.7rem}
+    .logo{width:40px;height:40px;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,.14)}
+    .social{display:flex;gap:.6rem}
+    .nav-toggle{display:none;border:1px solid rgba(255,255,255,.15);background:transparent;border-radius:12px;padding:.5rem .7rem}
+
+    /* GALLERY GRID: mobile-first */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
     .work{position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.12)}
     .work img{aspect-ratio:16/10;object-fit:cover;filter:saturate(1.03) contrast(1.02)}
-    .work .label{position:absolute;left:.7rem;bottom:.7rem;background:rgba(0,0,0,.45);backdrop-filter:blur(4px);padding:.4rem .6rem;border-radius:10px;font-size:.82rem}
-    .work:hover{transform:translateY(-3px);transition:.25s ease;box-shadow:0 16px 40px -22px rgba(167,139,250,.7)}
-    .about{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem}
-    .about .me{padding:1.2rem}
-    .list{display:grid;gap:.6rem}
-    .list li{list-style:none;display:flex;gap:.7rem;align-items:flex-start}
-    .chip{display:inline-flex;align-items:center;gap:.45rem;padding:.45rem .7rem;border-radius:999px;border:1px dashed rgba(255,255,255,.28)}
-    .footer{padding:2rem 0;border-top:1px solid rgba(255,255,255,.08);color:var(--muted);font-size:.95rem}
-    .floating{position:fixed;right:1.2rem;bottom:1.2rem;display:flex;flex-direction:column;gap:.7rem;z-index:10}
-    .social{display:flex;gap:.8rem}
-    /* masonry-ish */
-    .col-6{grid-column:span 6}
-    .col-8{grid-column:span 8}
-    .col-4{grid-column:span 4}
+    .work .label{position:absolute;left:.6rem;bottom:.6rem;background:rgba(0,0,0,.45);backdrop-filter:blur(4px);padding:.35rem .55rem;border-radius:10px;font-size:.8rem}
+    .work:hover{transform:translateY(-2px);transition:.2s ease;box-shadow:0 14px 36px -22px rgba(167,139,250,.6)}
 
-    /* responsive */
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+    .about .me{padding:1rem}
+    .list{display:grid;gap:.55rem}
+    .list li{list-style:none;display:flex;gap:.6rem;align-items:flex-start}
+    .chip{display:inline-flex;align-items:center;gap:.45rem;padding:.45rem .7rem;border-radius:999px;border:1px dashed rgba(255,255,255,.28)}
+
+    .footer{padding:1.6rem 0;border-top:1px solid rgba(255,255,255,.08);color:var(--muted);font-size:.95rem}
+    .floating{position:fixed;right:1rem;bottom:1rem;display:flex;flex-direction:column;gap:.6rem;z-index:40}
+
+    /* RESPONSIVE */
     @media (max-width: 980px){
       .hero .wrap{grid-template-columns:1fr}
       .about{grid-template-columns:1fr}
+    }
+    @media (max-width: 640px){
+      .nav-toggle{display:inline-flex}
+      nav.social{display:none}
+      nav.social.open{display:flex;flex-direction:column;position:absolute;inset:60px 4% auto;gap:.6rem;background:rgba(17,24,51,.95);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:.8rem}
+      .hero{padding:3rem 0 1.2rem}
+      .card{border-radius:14px}
+      .btn{width:100%;justify-content:center}
+      .stack{gap:.45rem}
+      section{padding:2rem 0}
+    }
+
+    /* Aksesibilitas */
+    @media (prefers-reduced-motion: reduce){
+      *{scroll-behavior:auto}
+      .btn{transition:none}
+      .work:hover{transform:none;box-shadow:none}
     }
   </style>
 </head>
 <body>
   <!-- === NAV / IDENTITAS SINGKAT === -->
-  <header class="container" style="padding:1.2rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem">
-    <div style="display:flex;align-items:center;gap:.8rem">
-      <div style="width:40px;height:40px;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,.14)">
-        <!-- GANTI GAMBAR: logo/initial brand -->
-        <img src="assets/logo-anda.png" alt="Logo Syahrul Anam" />
+  <header class="site">
+    <div class="container nav-wrap">
+      <div class="brand">
+        <div class="logo">
+          <!-- GANTI GAMBAR: logo/initial brand -->
+          <img src="assets/logo-anda.png" alt="Logo Syahrul Anam" loading="lazy"/>
+        </div>
+        <strong>Syahrul Anam</strong>
+        <span class="chip" aria-label="Profesi">🎨 Desainer Visual</span>
       </div>
-      <strong>Syahrul Anam</strong>
-      <span class="chip"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L20 6V12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12V6L12 3Z" stroke="currentColor" stroke-width="1.5"/></svg> Desainer
-        Visual</span>
+      <button class="nav-toggle" aria-label="Buka menu" onclick="document.querySelector('nav.social').classList.toggle('open')">☰</button>
+      <nav class="social">
+        <a class="pill" href="#karya" role="button">Karya</a>
+        <a class="pill" href="#tentang" role="button">Tentang</a>
+        <a class="pill" href="#kontak" role="button">Kontak</a>
+      </nav>
     </div>
-    <nav class="social">
-      <a class="pill" href="#karya">Karya</a>
-      <a class="pill" href="#tentang">Tentang</a>
-      <a class="pill" href="#kontak">Kontak</a>
-    </nav>
   </header>
 
   <!-- === HERO === -->
@@ -95,7 +122,8 @@
           <a class="btn primary" href="#karya">Lihat Karya</a>
           <!-- GANTI FILE: tautkan CV PDF asli -->
           <!-- GANTI FILE: letakkan PDF portofolio di assets/portfolio-full.pdf -->
-          <a class="btn" href="assets/portfolio-full.pdf" download="Portofolio-Syahrul-Anam.pdf" rel="noopener">Unduh PDF Portofolio</a>
+          <!-- Gunakan link absolut agar aman di GitHub Pages; ubah jika belum diupload -->
+          <a class="btn" href="https://anamsyahrul.github.io/assets/portfolio-full.pdf" download="Portofolio-Syahrul-Anam.pdf" rel="noopener">Unduh PDF Portofolio</a>
         </div>
         <div class="stack" style="margin-top:1.2rem">
           <span class="chip">Pixellab</span>
@@ -109,7 +137,7 @@
       <div class="hero-pic">
         <div class="card" style="padding:1rem;border-radius:20px">
           <!-- GANTI GAMBAR: foto profil asli -->
-          <img src="assets/foto-profil.jpg" alt="Foto Syahrul Anam" style="border-radius:14px"/>
+          <img src="assets/foto-profil.jpg" loading="lazy" sizes="(max-width:640px) 100vw, 520px" alt="Foto Syahrul Anam" style="border-radius:14px"/>
         </div>
         <div class="grid" style="grid-template-columns:1fr 1fr;margin-top:1rem">
           <div class="card" style="padding:1rem;border-radius:16px;text-align:center">
@@ -135,37 +163,37 @@
 
         <a class="work col-8" href="assets/works/01-branding-himaba.jpg" target="_blank" title="Branding HIMABA">
           <!-- GANTI GAMBAR: 01-branding-himaba.jpg -->
-          <img src="assets/works/01-branding-himaba.jpg" alt="Branding HIMABA"/>
+          <img src="assets/works/01-branding-himaba.jpg" loading="lazy" sizes="(max-width:640px) 100vw, 50vw" alt="Branding HIMABA"/>
           <span class="label">Branding • HIMABA</span>
         </a>
 
         <a class="work col-4" href="assets/works/02-logo-harlah-61.jpg" target="_blank" title="Logo Harlah 61">
           <!-- GANTI GAMBAR: 02-logo-harlah-61.jpg -->
-          <img src="assets/works/02-logo-harlah-61.jpg" alt="Logo Harlah 61"/>
+          <img src="assets/works/02-logo-harlah-61.jpg" loading="lazy" sizes="(max-width:640px) 100vw, 50vw" alt="Logo Harlah 61"/>
           <span class="label">Logo • Harlah 61</span>
         </a>
 
         <a class="work col-6" href="assets/works/03-spanduk-bazaar.jpg" target="_blank" title="Spanduk Bazaar">
           <!-- GANTI GAMBAR: 03-spanduk-bazaar.jpg -->
-          <img src="assets/works/03-spanduk-bazaar.jpg" alt="Spanduk Bazaar"/>
+          <img src="assets/works/03-spanduk-bazaar.jpg" loading="lazy" sizes="(max-width:640px) 100vw, 50vw" alt="Spanduk Bazaar"/>
           <span class="label">Spanduk • Bazaar</span>
         </a>
 
         <a class="work col-6" href="assets/works/04-poster-acara.jpg" target="_blank" title="Poster Acara">
           <!-- GANTI GAMBAR: 04-poster-acara.jpg -->
-          <img src="assets/works/04-poster-acara.jpg" alt="Poster Acara"/>
+          <img src="assets/works/04-poster-acara.jpg" loading="lazy" sizes="(max-width:640px) 100vw, 50vw" alt="Poster Acara"/>
           <span class="label">Poster • Event</span>
         </a>
 
         <a class="work col-4" href="assets/works/05-feed-ig-1.jpg" target="_blank" title="Feed IG 1">
           <!-- GANTI GAMBAR: 05-feed-ig-1.jpg -->
-          <img src="assets/works/05-feed-ig-1.jpg" alt="Feed Instagram"/>
+          <img src="assets/works/05-feed-ig-1.jpg" loading="lazy" sizes="(max-width:640px) 100vw, 33vw" alt="Feed Instagram"/>
           <span class="label">Feed • Instagram</span>
         </a>
 
         <a class="work col-8" href="assets/works/06-banner-bustan.jpg" target="_blank" title="Banner Pondok">
           <!-- GANTI GAMBAR: 06-banner-bustan.jpg -->
-          <img src="assets/works/06-banner-bustan.jpg" alt="Banner Pondok"/>
+          <img src="assets/works/06-banner-bustan.jpg" loading="lazy" sizes="(max-width:640px) 100vw, 66vw" alt="Banner Pondok"/>
           <span class="label">Banner • Pondok</span>
         </a>
       </div>
@@ -179,7 +207,7 @@
         <div style="display:grid;grid-template-columns:110px 1fr;gap:1rem;align-items:center">
           <div style="border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.12)">
             <!-- GANTI GAMBAR: foto square untuk kartu -->
-            <img src="assets/foto-square.jpg" alt="Syahrul Anam"/>
+            <img src="assets/foto-square.jpg" loading="lazy" sizes="96px" alt="Syahrul Anam"/>
           </div>
           <div>
             <h3 style="margin:.2rem 0 .4rem">Syahrul Anam</h3>
@@ -277,7 +305,7 @@
       </div>
       <div class="card" style="padding:1rem;border-radius:18px">
         <!-- GANTI GAMBAR: ilustrasi/preview karya -->
-        <img src="assets/preview-karya.jpg" alt="Preview Karya" style="border-radius:12px"/>
+        <img src="assets/preview-karya.jpg" loading="lazy" sizes="(max-width:640px) 100vw, 420px" alt="Preview Karya" style="border-radius:12px"/>
       </div>
     </div>
   </section>
@@ -301,7 +329,7 @@
     </a>
     <!-- TOMBOL DOWNLOAD PDF PORTOFOLIO -->
     <!-- GANTI FILE: pastikan path PDF benar -->
-    <a class="btn" href="assets/portfolio-full.pdf" download="Portofolio-Syahrul-Anam.pdf" rel="noopener" aria-label="Unduh Portofolio PDF">⬇️ Unduh PDF</a>
+    <a class="btn" href="https://anamsyahrul.github.io/assets/portfolio-full.pdf" download="Portofolio-Syahrul-Anam.pdf" rel="noopener" aria-label="Unduh Portofolio PDF">⬇️ Unduh PDF</a>
     <button class="btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Kembali ke atas">⬆️ Ke atas</button>
   </div>
 
